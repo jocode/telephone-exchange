@@ -1,3 +1,5 @@
+import json
+
 class Abonado():
 
     STATUS = {
@@ -13,7 +15,7 @@ class Abonado():
         self.telefono = telefono
         self.correo = correo
         self.saldo = saldo
-        self.lista_llamadas = lista_llamadas
+        self.lista_llamadas = lista_llamadas # Diccionario
         self.status = status  # 0 = ocupado, 1 = disponible, 2 = suspendido
 
     def show_info(self):
@@ -27,6 +29,9 @@ class Abonado():
     def get_status(self):
         return self.STATUS[self.status]
 
+    def save_call(self, llamada):
+        self.lista_llamadas.append(llamada.__dict__)
+
     def __str__(self):
         return '[{}] {} {} {}'.format(self.get_status(), self.nombre, self.apellido, self.telefono)
 
@@ -38,7 +43,7 @@ class Llamada():
         self.costo = costo
         self.numero_destino = numero_destino
         self.fecha = fecha_llamada
-        
+
     def __str__(self):
         return '{} {}'.format(self.duracion, self.costo)
 

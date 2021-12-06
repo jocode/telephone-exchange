@@ -1,6 +1,12 @@
+from math import ceil, floor
 from pprint import pprint
+import random
 import inquirer
 from central import *
+import pyglet
+import time
+import os
+from abonado import Llamada
 
 '''
 This class is used to create the menu for the user to interact with.
@@ -8,6 +14,8 @@ This class is used to create the menu for the user to interact with.
 class Menu():
 
     def __init__(self, _central):
+        self.player = pyglet.media.Player()
+        self.conversations = ['conversation_1.wav', 'conversation_2.wav']
         self.central = _central
 
     # -------- Llamadas ---------
@@ -40,7 +48,6 @@ class Menu():
         self.make_call(answers['Abonado'].telefono)
 
     def make_call(self, number):
-        print("Llamando a {}".format(number))
         
         # Check if the number is valid
         if not self.central.check_number(number):
@@ -54,16 +61,45 @@ class Menu():
             print("El número {} está ocupado ".format(number))
             return
         elif (abonado.status == 1):
-            self.setSoundCalling()
-            print("El número {} está disponible".format(number))
+            print("Llamando a {} ...".format(number))
+            self.set_sound_calling(abonado)
             return
         else:
             print("El número {} está desactivado".format(number))
             return
 
-    def setSoundCalling(self):
-        print("Ring Ring")
-        # TODO: Implementar el sonido de llamada
+    def set_sound_calling(self, abonado):
+        sound = pyglet.resource.media('sounds/phone_call_sound_effect.wav')
+        self.player.next_source()
+        self.player.queue(sound)
+        self.player.play()
+        wait = randint(3, floor(5)) # sound.duration
+        print(wait)
+        time.sleep(wait)
+        self.player.next_source()
+        conversation = pyglet.resource.media('sounds/conversations/' + random.choice(self.conversations))
+        self.player.queue(conversation)
+        self.player.play()
+        ti = time.time()
+        wait = input('Presione [Enter] para terminar la llamada. \n')
+    
+        
+        if (wait == ''):
+            self.player.pause()
+
+
+        tf = time.time()
+        duration = ceil(tf - ti)
+        print('Duración de la llamada: {} \n'.format(duration))
+        # Save the call in the history
+        print("Guardando llamada en historial ...")
+        local_time = time.ctime(ti)
+        print("Local time:", local_time)
+        llamada = Llamada(local_time, duration, 3, abonado.telefono)
+        self.central.save_call(abonado, llamada)
+        os.system('pause')
+
+
 
 
     def show_history(self):

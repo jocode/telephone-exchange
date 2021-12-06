@@ -27,7 +27,11 @@ class Database:
 
     # Serialize data
     def serialize(self, data):
-        return [abonado.__dict__ for abonado in data]
+        serialized_data = []
+        for abonado in data:
+            serialized_data.append(abonado.__dict__)
+
+        return serialized_data
 
     def load(self):
         return self.db

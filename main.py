@@ -53,14 +53,12 @@ def show_abonados():
 
     print(Style.RESET_ALL)
 
-
 if __name__ == "__main__":
     setup_central()
     show_menu()
     menu = Menu(central)
     
     # show_abonados()
-    
     
     opcion = input("Ingrese una opción: ")
     print('\n')

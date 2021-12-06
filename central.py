@@ -87,6 +87,11 @@ class CentralTelefonica():
         return None
 
 
+    def save_call(self, abonado, llamada):
+        index = self.lista_abonados.index(abonado)
+        self.lista_abonados[index].save_call(llamada)
+        self.database.save(self.lista_abonados) # Save to database
+
     def llamar(self):
         print("Llamando...")
 
