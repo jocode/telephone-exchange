@@ -1,5 +1,4 @@
 from central import *
-from colorama import Fore, Back, Style  # https://www.geeksforgeeks.org/print-colors-python-terminal/
 from database import Database
 from menu import Menu
 """
@@ -41,17 +40,6 @@ def setup_central():
     print(f"Inicializando Central Telefónica ({len(lista_abonados)} abonados) ...")
     print(f"Abonados fuera de servicio: {len(central.get_fuera_servicio())}")
     print(f"Abonados ocupados: {len(central.get_ocupados())}\n")
-    
-def show_abonados():
-    for abonado in lista_abonados:
-        if (abonado.status == 2):
-            print(Fore.RED, abonado.show_info())
-        elif (abonado.status == 1):
-            print(Fore.GREEN, abonado.show_info())
-        else:
-            print(Fore.CYAN,  abonado.show_info())
-
-    print(Style.RESET_ALL)
 
 if __name__ == "__main__":
     setup_central()

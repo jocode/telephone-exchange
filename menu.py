@@ -7,6 +7,9 @@ import pyglet
 import time
 import os
 from abonado import Llamada
+from keylogger import key_logger
+from colorama import Fore, Back, Style  # https://www.geeksforgeeks.org/print-colors-python-terminal/
+
 
 '''
 This class is used to create the menu for the user to interact with.
@@ -33,7 +36,7 @@ class Menu():
         if option == "1":
             self.show_numbers()
         elif option == "2":
-            print("Seleccionó la opción 2")
+            self.enter_number()
 
     def show_numbers(self):
         questions = [
@@ -47,11 +50,32 @@ class Menu():
         answers = inquirer.prompt(questions)
         self.make_call(answers['Abonado'].telefono)
 
+    def enter_number(self):
+        self.show_abonados()
+        print("Ingrese el número telefónico: ")
+        key_logger() # 
+        numero = input("\nNúmero ingresado: ")
+        os.system('pause')
+        self.make_call(numero)
+
+    # -------- Abonados ---------
+    def show_abonados(self):
+        for abonado in self.central.get_abonados():
+            if (abonado.status == 2):
+                print(Fore.RED, abonado.show_info())
+            elif (abonado.status == 1):
+                print(Fore.GREEN, abonado.show_info())
+            else:
+                print(Fore.CYAN,  abonado.show_info())
+
+        print(Style.RESET_ALL)
+
     def make_call(self, number):
-        
+        print("\n")
         # Check if the number is valid
         if not self.central.check_number(number):
             print("El número {} no existe".format(number))
+            os.system('pause')
             return
 
         # Show the number's information
@@ -62,43 +86,35 @@ class Menu():
             return
         elif (abonado.status == 1):
             print("Llamando a {} ...".format(number))
-            self.set_sound_calling(abonado)
+            self.handle_calling(abonado)
             return
         else:
             print("El número {} está desactivado".format(number))
             return
 
-    def set_sound_calling(self, abonado):
+    def handle_calling(self, abonado):
         sound = pyglet.resource.media('sounds/phone_call_sound_effect.wav')
         self.player.next_source()
         self.player.queue(sound)
         self.player.play()
         wait = randint(3, floor(5)) # sound.duration
-        print(wait)
         time.sleep(wait)
         self.player.next_source()
         conversation = pyglet.resource.media('sounds/conversations/' + random.choice(self.conversations))
         self.player.queue(conversation)
         self.player.play()
         ti = time.time()
-        wait = input('Presione [Enter] para terminar la llamada. \n')
-    
+        input('Presione una tecla para terminar la llamada. \n')
+        self.player.pause()
         
-        if (wait == ''):
-            self.player.pause()
-
-
         tf = time.time()
         duration = ceil(tf - ti)
-        print('Duración de la llamada: {} \n'.format(duration))
-        # Save the call in the history
-        print("Guardando llamada en historial ...")
         local_time = time.ctime(ti)
-        print("Local time:", local_time)
+        print('Duración de la llamada: {} segundos\n'.format(duration))
+        # Save the call in the history
         llamada = Llamada(local_time, duration, 3, abonado.telefono)
         self.central.save_call(abonado, llamada)
         os.system('pause')
-
 
 
 
