@@ -1,0 +1,182 @@
+[
+    {
+        "nombre": "Devona",
+        "apellido": "Holden",
+        "telefono": "3180041273",
+        "correo": "devonaholden@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "David",
+        "apellido": "Brown",
+        "telefono": "3275499037",
+        "correo": "davidbrown@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "John",
+        "apellido": "Adams",
+        "telefono": "3124539010",
+        "correo": "johnadams@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Diane",
+        "apellido": "Eddy",
+        "telefono": "3091726052",
+        "correo": "dianeeddy@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Gabriel",
+        "apellido": "Krause",
+        "telefono": "3279094034",
+        "correo": "gabrielkrause@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Rosa",
+        "apellido": "Muller",
+        "telefono": "3031390001",
+        "correo": "rosamuller@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Dewey",
+        "apellido": "Yoon",
+        "telefono": "3063422698",
+        "correo": "deweyyoon@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Lawrence",
+        "apellido": "Grande",
+        "telefono": "3187944325",
+        "correo": "lawrencegrande@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Phillip",
+        "apellido": "Bell",
+        "telefono": "3128861617",
+        "correo": "phillipbell@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Lemuel",
+        "apellido": "Myers",
+        "telefono": "3030799871",
+        "correo": "lemuelmyers@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Sharon",
+        "apellido": "Weaver",
+        "telefono": "3194318381",
+        "correo": "sharonweaver@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Eduardo",
+        "apellido": "Hummel",
+        "telefono": "3140888087",
+        "correo": "eduardohummel@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Michael",
+        "apellido": "Olson",
+        "telefono": "3015677837",
+        "correo": "michaelolson@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Jerrold",
+        "apellido": "Cox",
+        "telefono": "3051393076",
+        "correo": "jerroldcox@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Gregory",
+        "apellido": "Morasca",
+        "telefono": "3215278226",
+        "correo": "gregorymorasca@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Andrew",
+        "apellido": "Lumpkin",
+        "telefono": "3186771887",
+        "correo": "andrewlumpkin@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Anthony",
+        "apellido": "Angotti",
+        "telefono": "3205552261",
+        "correo": "anthonyangotti@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Karen",
+        "apellido": "Ramirez",
+        "telefono": "3190524105",
+        "correo": "karenramirez@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Maude",
+        "apellido": "Edgington",
+        "telefono": "3088122362",
+        "correo": "maudeedgington@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Elizabeth",
+        "apellido": "Wilks",
+        "telefono": "3110874979",
+        "correo": "elizabethwilks@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    }
+]
