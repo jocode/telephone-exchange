@@ -11,3 +11,6 @@ El archivo de ejecución principal es el archivo `main.py`.
 :warning: Instalar las dependencias necesarias para el proyecto.
 
 - `pip install -r /path/to/requirements.txt`
+
+
+Con eso ya se puede ejecutar el programa. La persistencia de datos se hace con un archivo json, donde se guarda la información de los abonados, y las llamadas que cada uno ha realizado.

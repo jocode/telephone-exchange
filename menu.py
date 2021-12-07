@@ -22,9 +22,6 @@ class Menu():
         self.central = _central
 
     # -------- Llamadas ---------
-    def llamar(self):
-        self.showNumbers()
-
     def call(self):
         origen = self.select_phone("Elige el abonado desde el que desea llamar?", status=1)
         numero_destino = self.enter_number()

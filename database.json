@@ -23,9 +23,15 @@
                 "costo": 53.55,
                 "numero_destino": "3293223665",
                 "fecha": "Mon Dec  6 22:04:29 2021"
+            },
+            {
+                "duracion": 12,
+                "costo": 37.8,
+                "numero_destino": "3272201134",
+                "fecha": "Tue Dec  7 06:34:46 2021"
             }
         ],
-        "status": 2
+        "status": 0
     },
     {
         "nombre": "James",
@@ -39,6 +45,12 @@
                 "costo": 25.2,
                 "numero_destino": "3272201134",
                 "fecha": "Mon Dec  6 22:13:17 2021"
+            },
+            {
+                "duracion": 1,
+                "costo": 3.15,
+                "numero_destino": "3179278199",
+                "fecha": "Tue Dec  7 07:16:36 2021"
             }
         ],
         "status": 1
@@ -57,7 +69,7 @@
                 "fecha": "Mon Dec  6 21:32:52 2021"
             }
         ],
-        "status": 1
+        "status": 2
     },
     {
         "nombre": "Michael",
@@ -65,8 +77,21 @@
         "telefono": "3293223665",
         "correo": "michaelhidalgo@gmail.com",
         "saldo": 0,
-        "lista_llamadas": [],
-        "status": 0
+        "lista_llamadas": [
+            {
+                "duracion": 9,
+                "costo": 28.35,
+                "numero_destino": "3201770519",
+                "fecha": "Tue Dec  7 06:38:04 2021"
+            },
+            {
+                "duracion": 10,
+                "costo": 31.5,
+                "numero_destino": "3179278199",
+                "fecha": "Tue Dec  7 06:38:51 2021"
+            }
+        ],
+        "status": 1
     },
     {
         "nombre": "Robert",
@@ -100,7 +125,7 @@
                 "fecha": "Mon Dec  6 17:08:10 2021"
             }
         ],
-        "status": 2
+        "status": 0
     },
     {
         "nombre": "Joseph",
@@ -109,7 +134,7 @@
         "correo": "josephtanner@gmail.com",
         "saldo": 0,
         "lista_llamadas": [],
-        "status": 0
+        "status": 2
     },
     {
         "nombre": "Dewayne",
@@ -154,7 +179,7 @@
         "correo": "alicecastillo@gmail.com",
         "saldo": 0,
         "lista_llamadas": [],
-        "status": 2
+        "status": 0
     },
     {
         "nombre": "Kendrick",
@@ -190,7 +215,7 @@
         "correo": "charlesdelarosa@gmail.com",
         "saldo": 0,
         "lista_llamadas": [],
-        "status": 0
+        "status": 1
     },
     {
         "nombre": "William",
@@ -224,6 +249,6 @@
                 "fecha": "Mon Dec  6 21:35:38 2021"
             }
         ],
-        "status": 1
+        "status": 2
     }
 ]
