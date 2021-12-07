@@ -4,7 +4,7 @@ from abonado import Abonado
 class Database:
 
     def __init__(self, fileName):
-        self.db = {}
+        self.db = []
         self.file_name = fileName
         self.loadFile()
 
@@ -23,15 +23,15 @@ class Database:
     # Save file on json file. Receive a list of abonados
     def save(self, data):
         self.db = self.serialize(data)
+        
+        # for abonado in self.db:
+        #     print("Llamadas realizadas: ", abonado['lista_llamadas'])
+
         self.saveFile()
 
     # Serialize data
     def serialize(self, data):
-        serialized_data = []
-        for abonado in data:
-            serialized_data.append(abonado.__dict__)
-
-        return serialized_data
+        return [abonado.__dict__ for abonado in data]
 
     def load(self):
         return self.db

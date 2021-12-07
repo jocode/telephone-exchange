@@ -9,6 +9,7 @@ MAX_ABONADOS = 20
 class CentralTelefonica():
 
     lista_abonados = []
+    COST_PER_SECOND = 3.15 # Pesos colombianos
 
     def __init__(self, database):
         self.database = database
@@ -65,14 +66,18 @@ class CentralTelefonica():
 
             self.lista_abonados[random].status = 0  # Se estable como ocupado
 
+    def get_abonados(self):
+        return self.lista_abonados
+
     def get_ocupados(self):
         return [ocupado for ocupado in self.lista_abonados if ocupado.status == 0]
+
+    def get_disponibles(self):
+        return [disponible for disponible in self.lista_abonados if disponible.status == 1]
 
     def get_fuera_servicio(self):
         return [suspendido for suspendido in self.lista_abonados if suspendido.status == 2]
 
-    def get_abonados(self):
-        return self.lista_abonados
 
     def check_number(self, telefono):
         for abonado in self.lista_abonados:
@@ -90,7 +95,13 @@ class CentralTelefonica():
     def save_call(self, abonado, llamada):
         index = self.lista_abonados.index(abonado)
         self.lista_abonados[index].save_call(llamada)
+        print(f"Guardando llamada en {index}... {self.lista_abonados[index]}")
+
+        # for abonado in self.lista_abonados:
+        #     print("{} llamadas de {}".format(len(abonado.lista_llamadas), abonado.telefono))
+
         self.database.save(self.lista_abonados) # Save to database
+
 
     def llamar(self):
         print("Llamando...")

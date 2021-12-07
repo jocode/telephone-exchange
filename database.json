@@ -1,277 +1,227 @@
 [
     {
-        "nombre": "Jay",
-        "apellido": "Salinas",
-        "telefono": "3063210852",
-        "correo": "jaysalinas@gmail.com",
+        "nombre": "Joline",
+        "apellido": "Moller",
+        "telefono": "3190468392",
+        "correo": "jolinemoller@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [
+            {
+                "duracion": 9,
+                "costo": 28.35,
+                "numero_destino": "3026242653",
+                "fecha": "Mon Dec  6 21:34:38 2021"
+            },
+            {
+                "duracion": 9,
+                "costo": 28.35,
+                "numero_destino": "3274629295",
+                "fecha": "Mon Dec  6 21:45:10 2021"
+            },
+            {
+                "duracion": 17,
+                "costo": 53.55,
+                "numero_destino": "3293223665",
+                "fecha": "Mon Dec  6 22:04:29 2021"
+            }
+        ],
+        "status": 2
+    },
+    {
+        "nombre": "James",
+        "apellido": "Jackson",
+        "telefono": "3026242653",
+        "correo": "jamesjackson@gmail.com",
         "saldo": 0,
         "lista_llamadas": [
             {
                 "duracion": 8,
-                "costo": 3,
-                "numero_destino": "3063210852",
-                "fecha": "Mon Dec  6 14:53:29 2021"
-            },
-            {
-                "duracion": 10,
-                "costo": 3,
-                "numero_destino": "3063210852",
-                "fecha": "Mon Dec  6 15:20:55 2021"
-            },
-            {
-                "duracion": 10,
-                "costo": 3,
-                "numero_destino": "3063210852",
-                "fecha": "Mon Dec  6 15:23:08 2021"
-            },
-            {
-                "duracion": 13,
-                "costo": 3,
-                "numero_destino": "3063210852",
-                "fecha": "Mon Dec  6 15:23:41 2021"
+                "costo": 25.2,
+                "numero_destino": "3272201134",
+                "fecha": "Mon Dec  6 22:13:17 2021"
             }
         ],
-        "status": 0
+        "status": 1
     },
     {
-        "nombre": "Lauren",
-        "apellido": "Stephens",
-        "telefono": "3165481022",
-        "correo": "laurenstephens@gmail.com",
+        "nombre": "Calvin",
+        "apellido": "Vazquez",
+        "telefono": "3096971586",
+        "correo": "calvinvazquez@gmail.com",
         "saldo": 0,
         "lista_llamadas": [
             {
-                "duracion": 4.951014280319214,
-                "costo": 3,
-                "numero_destino": "3165481022",
-                "fecha": "Mon Dec  6 11:52:59 2021"
-            },
-            {
-                "duracion": 4,
-                "costo": 3,
-                "numero_destino": "3165481022",
-                "fecha": "Mon Dec  6 12:04:36 2021"
-            },
-            {
-                "duracion": 1,
-                "costo": 3,
-                "numero_destino": "3165481022",
-                "fecha": "Mon Dec  6 15:00:14 2021"
+                "duracion": 9,
+                "costo": 28.35,
+                "numero_destino": "3293223665",
+                "fecha": "Mon Dec  6 21:32:52 2021"
             }
         ],
         "status": 1
     },
     {
-        "nombre": "Ruth",
-        "apellido": "Votta",
-        "telefono": "3219259769",
-        "correo": "ruthvotta@gmail.com",
-        "saldo": 0,
-        "lista_llamadas": [
-            {
-                "duracion": 2,
-                "costo": 3,
-                "numero_destino": "3219259769",
-                "fecha": "Mon Dec  6 12:06:08 2021"
-            },
-            {
-                "duracion": 12,
-                "costo": 3,
-                "numero_destino": "3219259769",
-                "fecha": "Mon Dec  6 12:06:42 2021"
-            }
-        ],
-        "status": 2
-    },
-    {
-        "nombre": "Theodore",
-        "apellido": "Price",
-        "telefono": "3171688639",
-        "correo": "theodoreprice@gmail.com",
-        "saldo": 0,
-        "lista_llamadas": [],
-        "status": 2
-    },
-    {
-        "nombre": "Kevin",
-        "apellido": "Grise",
-        "telefono": "3147681066",
-        "correo": "kevingrise@gmail.com",
-        "saldo": 0,
-        "lista_llamadas": [
-            {
-                "duracion": 5,
-                "costo": 3,
-                "numero_destino": "3147681066",
-                "fecha": "Mon Dec  6 15:25:56 2021"
-            }
-        ],
-        "status": 1
-    },
-    {
-        "nombre": "Jessica",
-        "apellido": "Kim",
-        "telefono": "3141205679",
-        "correo": "jessicakim@gmail.com",
+        "nombre": "Michael",
+        "apellido": "Hidalgo",
+        "telefono": "3293223665",
+        "correo": "michaelhidalgo@gmail.com",
         "saldo": 0,
         "lista_llamadas": [],
         "status": 0
-    },
-    {
-        "nombre": "Mark",
-        "apellido": "Lopez",
-        "telefono": "3030879120",
-        "correo": "marklopez@gmail.com",
-        "saldo": 0,
-        "lista_llamadas": [
-            {
-                "duracion": 10,
-                "costo": 3,
-                "numero_destino": "3030879120",
-                "fecha": "Mon Dec  6 15:26:19 2021"
-            }
-        ],
-        "status": 1
-    },
-    {
-        "nombre": "Maria",
-        "apellido": "Jones",
-        "telefono": "3282488807",
-        "correo": "mariajones@gmail.com",
-        "saldo": 0,
-        "lista_llamadas": [],
-        "status": 1
-    },
-    {
-        "nombre": "Scott",
-        "apellido": "Johnson",
-        "telefono": "3281144394",
-        "correo": "scottjohnson@gmail.com",
-        "saldo": 0,
-        "lista_llamadas": [],
-        "status": 1
-    },
-    {
-        "nombre": "Maricela",
-        "apellido": "Morado",
-        "telefono": "3279655786",
-        "correo": "maricelamorado@gmail.com",
-        "saldo": 0,
-        "lista_llamadas": [],
-        "status": 0
-    },
-    {
-        "nombre": "Linda",
-        "apellido": "Anaya",
-        "telefono": "3255463030",
-        "correo": "lindaanaya@gmail.com",
-        "saldo": 0,
-        "lista_llamadas": [],
-        "status": 0
-    },
-    {
-        "nombre": "Sarah",
-        "apellido": "Mangels",
-        "telefono": "3104554087",
-        "correo": "sarahmangels@gmail.com",
-        "saldo": 0,
-        "lista_llamadas": [],
-        "status": 1
     },
     {
         "nombre": "Robert",
-        "apellido": "Smithson",
-        "telefono": "3128753405",
-        "correo": "robertsmithson@gmail.com",
+        "apellido": "Black",
+        "telefono": "3160121285",
+        "correo": "robertblack@gmail.com",
         "saldo": 0,
         "lista_llamadas": [],
         "status": 1
     },
     {
-        "nombre": "Louise",
-        "apellido": "Distaffen",
-        "telefono": "3175168151",
-        "correo": "louisedistaffen@gmail.com",
+        "nombre": "John",
+        "apellido": "Alvarado",
+        "telefono": "3201770519",
+        "correo": "johnalvarado@gmail.com",
         "saldo": 0,
         "lista_llamadas": [],
         "status": 1
     },
     {
-        "nombre": "Glinda",
-        "apellido": "Schwein",
-        "telefono": "3226387262",
-        "correo": "glindaschwein@gmail.com",
+        "nombre": "Marvin",
+        "apellido": "Broadnax",
+        "telefono": "3119772227",
+        "correo": "marvinbroadnax@gmail.com",
         "saldo": 0,
-        "lista_llamadas": [],
-        "status": 1
+        "lista_llamadas": [
+            {
+                "duracion": 12,
+                "costo": 37.8,
+                "numero_destino": "3274629295",
+                "fecha": "Mon Dec  6 17:08:10 2021"
+            }
+        ],
+        "status": 2
     },
     {
-        "nombre": "Patricia",
-        "apellido": "Gonzalez",
-        "telefono": "3281120304",
-        "correo": "patriciagonzalez@gmail.com",
+        "nombre": "Joseph",
+        "apellido": "Tanner",
+        "telefono": "3186069538",
+        "correo": "josephtanner@gmail.com",
         "saldo": 0,
         "lista_llamadas": [],
         "status": 0
     },
     {
-        "nombre": "Mary",
-        "apellido": "Jewell",
-        "telefono": "3212755823",
-        "correo": "maryjewell@gmail.com",
+        "nombre": "Dewayne",
+        "apellido": "Forsyth",
+        "telefono": "3137861708",
+        "correo": "dewayneforsyth@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "John",
+        "apellido": "Marquez",
+        "telefono": "3058180237",
+        "correo": "johnmarquez@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 0
+    },
+    {
+        "nombre": "Albert",
+        "apellido": "Hunt",
+        "telefono": "3069666553",
+        "correo": "alberthunt@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Michael",
+        "apellido": "Hutchinson",
+        "telefono": "3007320378",
+        "correo": "michaelhutchinson@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Alice",
+        "apellido": "Castillo",
+        "telefono": "3251803920",
+        "correo": "alicecastillo@gmail.com",
         "saldo": 0,
         "lista_llamadas": [],
         "status": 2
     },
     {
-        "nombre": "Travis",
-        "apellido": "Mercuri",
-        "telefono": "3199734686",
-        "correo": "travismercuri@gmail.com",
+        "nombre": "Kendrick",
+        "apellido": "Shaw",
+        "telefono": "3136361938",
+        "correo": "kendrickshaw@gmail.com",
         "saldo": 0,
         "lista_llamadas": [],
         "status": 1
     },
     {
-        "nombre": "Ruth",
-        "apellido": "Ford",
-        "telefono": "3082920153",
-        "correo": "ruthford@gmail.com",
+        "nombre": "Elmer",
+        "apellido": "Ratliff",
+        "telefono": "3276730086",
+        "correo": "elmerratliff@gmail.com",
         "saldo": 0,
-        "lista_llamadas": [
-            {
-                "duracion": 7,
-                "costo": 3,
-                "numero_destino": "3082920153",
-                "fecha": "Mon Dec  6 15:15:32 2021"
-            },
-            {
-                "duracion": 15,
-                "costo": 3,
-                "numero_destino": "3082920153",
-                "fecha": "Mon Dec  6 15:17:58 2021"
-            },
-            {
-                "duracion": 6,
-                "costo": 3,
-                "numero_destino": "3082920153",
-                "fecha": "Mon Dec  6 15:19:58 2021"
-            }
-        ],
+        "lista_llamadas": [],
         "status": 1
     },
     {
-        "nombre": "Chelsea",
-        "apellido": "Rizzo",
-        "telefono": "3249271836",
-        "correo": "chelsearizzo@gmail.com",
+        "nombre": "Cameron",
+        "apellido": "Lande",
+        "telefono": "3029623623",
+        "correo": "cameronlande@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Charles",
+        "apellido": "Delarosa",
+        "telefono": "3278226094",
+        "correo": "charlesdelarosa@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 0
+    },
+    {
+        "nombre": "William",
+        "apellido": "Hamilton",
+        "telefono": "3179278199",
+        "correo": "williamhamilton@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 1
+    },
+    {
+        "nombre": "Michelle",
+        "apellido": "Reeser",
+        "telefono": "3274629295",
+        "correo": "michellereeser@gmail.com",
+        "saldo": 0,
+        "lista_llamadas": [],
+        "status": 0
+    },
+    {
+        "nombre": "Richard",
+        "apellido": "Gatto",
+        "telefono": "3272201134",
+        "correo": "richardgatto@gmail.com",
         "saldo": 0,
         "lista_llamadas": [
             {
-                "duracion": 1,
-                "costo": 3,
-                "numero_destino": "3249271836",
-                "fecha": "Mon Dec  6 15:05:36 2021"
+                "duracion": 4,
+                "costo": 12.6,
+                "numero_destino": "3201770519",
+                "fecha": "Mon Dec  6 21:35:38 2021"
             }
         ],
         "status": 1

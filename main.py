@@ -1,3 +1,4 @@
+from os import system
 from central import *
 from database import Database
 from menu import Menu
@@ -20,14 +21,14 @@ Implementar en python una Central Telefónica que cumpla con los siguientes requ
 
 def show_menu():
     print("""
-    -------------------------------------------------
+    ........................................
     Bienvenido a la Central Telefónica.
 
     1. Hacer una llamada
     2. Ver historial de llamadas
     3. Ver facturas
     0. Salir
-    -------------------------------------------------
+    ........................................
     """)
 
 
@@ -46,8 +47,6 @@ if __name__ == "__main__":
     show_menu()
     menu = Menu(central)
     
-    # show_abonados()
-    
     opcion = input("Ingrese una opción: ")
     print('\n')
     while opcion != "0":
@@ -55,8 +54,10 @@ if __name__ == "__main__":
             menu.call()
         elif opcion == "2":
             menu.show_history()
+            system('pause')
         elif opcion == "3":
             menu.show_billing()
+            system('pause')
         else:
             print("Opción inválida")
         
@@ -65,5 +66,5 @@ if __name__ == "__main__":
         print('\n')
 
     print("Gracias por usar la Central Telefónica")
-    print("Hasta luego.")
+    print("Hasta luego.\n")
 

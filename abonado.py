@@ -29,8 +29,18 @@ class Abonado():
     def get_status(self):
         return self.STATUS[self.status]
 
+    def get_history(self):
+        return [Llamada(**llamada) for llamada in self.lista_llamadas]
+
     def save_call(self, llamada):
         self.lista_llamadas.append(llamada.__dict__)
+
+    def get_billing(self):
+        # Suma el costo de las llamadas
+        return sum([llamada['costo'] for llamada in self.lista_llamadas])
+
+    def count_calls(self):
+        return len(self.lista_llamadas)
 
     def __str__(self):
         return '[{}] {} {} {}'.format(self.get_status(), self.nombre, self.apellido, self.telefono)
@@ -38,14 +48,14 @@ class Abonado():
 
 class Llamada():
 
-    def __init__(self, fecha_llamada, duracion, costo, numero_destino):
+    def __init__(self, fecha, duracion, costo, numero_destino):
         self.duracion = duracion
         self.costo = costo
         self.numero_destino = numero_destino
-        self.fecha = fecha_llamada
+        self.fecha = fecha
 
     def __str__(self):
-        return '{} {}'.format(self.duracion, self.costo)
+        return '{}.   {} segundos.   ${} pesos'.format(self.fecha, self.duracion, self.costo)
 
 
     
